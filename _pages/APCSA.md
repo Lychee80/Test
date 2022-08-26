@@ -1,5 +1,5 @@
 ---
 layout: page
-title: Topic ApCSA
+title: ApCSA
 permalink: /APCSA/
 ---
