@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Python Hello World post",
-            "content": "msg=&quot;Hello World&quot; print(msg) . Hello World .",
+            "content": ". layout: page . permalink: /HelloPython/ . msg=&quot;Hello World&quot; print(msg) . Hello World .",
             "url": "https://lychee80.github.io/Test/2022/08/28/pythonHelloworld.html",
             "relUrl": "/2022/08/28/pythonHelloworld.html",
             "date": " • Aug 28, 2022"
@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Title",
-            "content": "",
+            "content": ". layout: page . permalink: /Primitive/ .",
             "url": "https://lychee80.github.io/Test/2022/08/28/primitives.html",
             "relUrl": "/2022/08/28/primitives.html",
             "date": " • Aug 28, 2022"
@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "Java Hello World",
-            "content": "public class HelloStatic { public static void main(String[] args){ System.out.println(&quot;Hello World&quot;); } } HelloStatic.main(null); . Hello World .",
+            "content": ". layout: page . permalink: /HelloJava/ . public class HelloStatic { public static void main(String[] args){ System.out.println(&quot;Hello World&quot;); } } HelloStatic.main(null); . Hello World .",
             "url": "https://lychee80.github.io/Test/2022/08/28/javaHelloworld.html",
             "relUrl": "/2022/08/28/javaHelloworld.html",
             "date": " • Aug 28, 2022"
@@ -74,8 +74,8 @@
       ,"page1": {
           "title": "ApCSA PBL",
           "content": "Units . Primitive types . | Using Objects | Boolean Expressions and if Statements | ITeration | Writing Classes | Array | ArrayList | 2D Array | Inheritance | Recursion |",
-          "url": "https://lychee80.github.io/Test/APCSAPBL/",
-          "relUrl": "/APCSAPBL/",
+          "url": "https://lychee80.github.io/Test/APCSACB/",
+          "relUrl": "/APCSACB/",
           "date": ""
       }
       
@@ -84,7 +84,7 @@
   
       ,"page2": {
           "title": "ApCSA PBL",
-          "content": "Week 0 . Notes . Week 1 . Bash .",
+          "content": "Week 0 . HelloWorld(Java) HelloWorld(Python) Post1 . Week 1 . Bash .",
           "url": "https://lychee80.github.io/Test/APCSAPBL/",
           "relUrl": "/APCSAPBL/",
           "date": ""
