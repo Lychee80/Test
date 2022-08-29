@@ -1,7 +1,7 @@
 ---
 layout: page
 title: ApCSA PBL
-permalink: /APCSAPBL/
+permalink: /APCSACB/
 ---
 # Units
 1. Primitive types
