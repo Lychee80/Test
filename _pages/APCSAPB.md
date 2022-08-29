@@ -10,4 +10,5 @@ permalink: /APCSAPBL/
 
 # Week 1
 <a href="{{site.baseurl}}/bashcheck/">Bash</a>
+<a href="{{site.baseurl}}/Primitive/">Primitives</a>
 
