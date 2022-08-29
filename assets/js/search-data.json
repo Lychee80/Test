@@ -72,8 +72,8 @@
 
   
       ,"page1": {
-          "title": "ApCSA PBL",
-          "content": "Units . Primitive types Primitives | . | Using Objects | Boolean Expressions and if Statements | ITeration | Writing Classes | Array | ArrayList | 2D Array | Inheritance | Recursion |",
+          "title": "ApCSA Collegeboard",
+          "content": "Units . Primitive types Primitives | Using Objects | Boolean Expressions and if Statements | ITeration | Writing Classes | Array | ArrayList | 2D Array | Inheritance | Recursion |",
           "url": "https://lychee80.github.io/Test/APCSACB/",
           "relUrl": "/APCSACB/",
           "date": ""
@@ -83,7 +83,7 @@
 
   
       ,"page2": {
-          "title": "ApCSA PBL",
+          "title": "ApCSA Probject based Learning",
           "content": "Week 0 . HelloWorld(Java) HelloWorld(Python) Post1 . Week 1 . Bash Primitives .",
           "url": "https://lychee80.github.io/Test/APCSAPBL/",
           "relUrl": "/APCSAPBL/",
