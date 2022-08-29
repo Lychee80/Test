@@ -10,5 +10,5 @@ permalink: /APCSAPBL/
 
 # Week 1
 1. <a href="https://lychee80.github.io/Test/2022/08/28/bash-checks.html">Bash</a>
-2. 
+2. <a href="https://lychee80.github.io/Test/2022/08/28/primitives.html">Primitives</a>
 

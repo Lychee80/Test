@@ -5,7 +5,7 @@ permalink: /APCSACB/
 ---
 # Units
 1. Primitive types
-    
+    <a href="https://lychee80.github.io/Test/2022/08/28/primitives.html">Primitives</a>
 2. Using Objects
 3. Boolean Expressions and if Statements 
 4. ITeration
