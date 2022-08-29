@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ApCSA Probject based Learning
+title: ApCSA Project based Learning
 permalink: /APCSAPBL/
 ---
 # Week 0 
