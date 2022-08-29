@@ -1,1 +1,1 @@
-a
+permalink: /vocab/
