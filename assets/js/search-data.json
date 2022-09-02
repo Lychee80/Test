@@ -46,8 +46,8 @@
   
     
         ,"post4": {
-            "title": "Title",
-            "content": "public class Main { public static void main(String[] args) { int num; num=20; //can define the variable later System.out.println(num);//the num is a parameter so you don&#39;t need null (though if you do use null, nothing will show) System.out.println(&quot;Hello&quot;); System.out.println(&quot;How are you?&quot;); System.out.print(&quot;Will this be on another line?&quot;); //System.out.print won&#39;t print the next line on another line unlike System.out.println() //but the next line &quot;Hello&quot; will be on a different line than &quot;How are you&quot; but //&quot;Will this be on another line&quot; won&#39;t System.out.println(&quot; No&quot;); /* This is a multiline comment unlike // */ } } Main.main(null); . 20 Hello How are you? Will this be on another line? No . public class Main { public static void main(String[] args) { int p = 15; int m = 30; //will overwrite the existing value final int z = p * m; //final makes it so it is impossible to overwrite System.out.println(z); char letter = &#39;M&#39;; //char is for a single letter and needs to be in single quotes float check= 4.99f; System.out.println(check); String color = &quot;red&quot;; String shape = &quot; triangle&quot;; String description = color + shape; System.out.println(description); System.out.println(p*m);// can do this or define for another value ex z } } Main.main(null); . 450 4.99 red triangle 450 . public class Main { public static void main(String[] args) { double a=3.2, b=2.0, c=9.444; //can define all together too double e, f; e=f=0.88e4; // can define them together too, e4 or E4 means .88 x 10^4 System.out.println(a); System.out.println(e); char ascii= 89, x=90; System.out.println(ascii); System.out.println(x); } } Main.main(null); . 3.2 8800.0 Y Z . primitives Non-primitives . Predefined | done by you | . lowercase | uppercase | . &quot;Primitives&quot; | &quot;Reference types&quot; | . cannot call methods | can call methods | . value | can be null | . different sizes based on which primitive it is | all same size | . Variable names must use camelCase while method names use PascalCase | Variable names are called identifiers | Integers are used in byte,short, int, and long | The amount of digits able to be used is in order from longest to shortest ^ | Decimals are used with float and double | Typically for doubles,longs, and floats you need to have d, f, or &quot;L&quot; after the value but it works just fine normally without it (except for in floats- floats you need it) | Float vs Double is that float is a lot more specific (less decimal places) | chars also work for ascii values | null means that there is no parameter but we are acknowledging that there is | .",
+            "title": "Primitives vs Non-primitives",
+            "content": ". layout: page title: Java Notes (general overview) . permalink: /APCSACB/ . public class Main { public static void main(String[] args) { int num; num=20; //can define the variable later System.out.println(num);//the num is a parameter so you don&#39;t need null (though if you do use null, nothing will show) System.out.println(&quot;Hello&quot;); System.out.println(&quot;How are you?&quot;); System.out.print(&quot;Will this be on another line?&quot;); //System.out.print won&#39;t print the next line on another line unlike System.out.println() //but the next line &quot;Hello&quot; will be on a different line than &quot;How are you&quot; but //&quot;Will this be on another line&quot; won&#39;t System.out.println(&quot; No&quot;); /* This is a multiline comment unlike // */ } } Main.main(null); . 20 Hello How are you? Will this be on another line? No . public class Main { public static void main(String[] args) { int p = 15; int m = 30; //will overwrite the existing value final int z = p * m; //final makes it so it is impossible to overwrite System.out.println(z); char letter = &#39;M&#39;; //char is for a single letter and needs to be in single quotes float check= 4.99f; System.out.println(check); String color = &quot;red&quot;; String shape = &quot; triangle&quot;; String description = color + shape; System.out.println(description); System.out.println(p*m);// can do this or define for another value ex z } } Main.main(null); . 450 4.99 red triangle 450 . public class Main { public static void main(String[] args) { double a=3.2, b=2.0, c=9.444; //can define all together too double e, f; e=f=0.88e4; // can define them together too, e4 or E4 means .88 x 10^4 System.out.println(a); System.out.println(e); char ascii= 89, x=90; System.out.println(ascii); System.out.println(x); } } Main.main(null); . 3.2 8800.0 Y Z .",
             "url": "https://lychee80.github.io/Test/2022/09/01/java-notes.html",
             "relUrl": "/2022/09/01/java-notes.html",
             "date": " • Sep 1, 2022"
@@ -94,7 +94,7 @@
 
   
       ,"page1": {
-          "title": "ApCSA Collegeboard",
+          "title": "Collegeboard",
           "content": "Units . Primitive types Primitives . | Using Objects | Boolean Expressions and if Statements | ITeration | Writing Classes | Array | ArrayList | 2D Array | Inheritance | Recursion |",
           "url": "https://lychee80.github.io/Test/APCSACB/",
           "relUrl": "/APCSACB/",
@@ -105,7 +105,7 @@
 
   
       ,"page2": {
-          "title": "ApCSA Project based Learning",
+          "title": "PBL",
           "content": "Week 0 . HelloWorld(Java) | HelloWorld(Python) | Post1 | Week 1 . Bash | Primitives |",
           "url": "https://lychee80.github.io/Test/APCSAPBL/",
           "relUrl": "/APCSAPBL/",
