@@ -1,6 +1,6 @@
 ---
 layout: page
-title: ApCSA Collegeboard
+title: Collegeboard
 permalink: /APCSACB/
 ---
 # Units
