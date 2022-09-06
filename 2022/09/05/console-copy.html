@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      6 min read
     
 </span></p>
 
@@ -150,7 +150,7 @@ window.onload = wrap_img;
 
     <span class="n">Scanner</span> <span class="n">object</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
     <span class="kt">int</span> <span class="n">option</span> <span class="o">=</span><span class="n">object</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-
+    
     <span class="k">if</span><span class="p">(</span><span class="n">option</span><span class="o">==</span><span class="mi">1</span><span class="p">){</span>
     <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Calculating the Circumference of a circle&quot;</span><span class="p">);</span>
     <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Enter Radius&quot;</span><span class="p">);</span>
@@ -187,12 +187,13 @@ window.onload = wrap_img;
     <span class="kt">int</span> <span class="n">kilometers</span> <span class="o">=</span> <span class="n">object</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
     <span class="kt">double</span> <span class="n">k</span><span class="o">=</span> <span class="n">kilometers</span><span class="o">*</span><span class="mf">3280.84</span><span class="p">;</span>
     <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="s">&quot; feet&quot;</span><span class="p">);</span>
-
-  <span class="p">}</span><span class="k">else</span> <span class="p">{</span>
-  <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Quitting system&quot;</span><span class="p">);</span>
+  <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Quitting system&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+  
 <span class="p">}</span>
   <span class="p">}</span>
-<span class="p">}</span>
+
 <span class="n">Console</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 </pre></div>
 
@@ -219,7 +220,7 @@ Option 5: Calculating feet to kilometers
 To escape: choose any other key on the keyboard
 Calculating the area of a circle
 Enter Radius
-50.24
+28.26
 </pre>
 </div>
 </div>
@@ -355,6 +356,119 @@ A seal&#39;s milk is extremely fatty and its because of this that baby seals are
 
 5: Invalid: Try again
 0: Thank you
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kn">import</span> <span class="nn">java.util.Scanner</span><span class="p">;</span>
+
+<span class="kd">class</span> <span class="nc">Console</span> <span class="p">{</span>
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Quick Calculations!&quot;</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Option 1-2 for circle related problems, Options 3-4 for imperial to metric calculations, Option 5 for metric to imperial calculations&quot;</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;&quot;</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Choose one of the following options: &quot;</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Option 1: Calculating the Circumference of a circle &quot;</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Option 2: Calculating the area of a circle &quot;</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Option 3: Calculating Celsius from Fahrenheit &quot;</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Option 4: Calculating Centimeters from Inches &quot;</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Option 5: Calculating feet to kilometers &quot;</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;To escape: choose any other key on the keyboard&quot;</span><span class="p">);</span>
+
+    <span class="n">Scanner</span> <span class="n">object</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+    <span class="kt">int</span> <span class="n">option</span> <span class="o">=</span><span class="n">object</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+<span class="k">do</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">option</span><span class="o">==</span><span class="mi">1</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Calculating the Circumference of a circle&quot;</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Enter Radius&quot;</span><span class="p">);</span>
+    <span class="kt">int</span> <span class="n">radius</span> <span class="o">=</span> <span class="n">object</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+    <span class="kt">double</span> <span class="n">pi</span><span class="o">=</span> <span class="mf">3.14</span><span class="p">;</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">radius</span> <span class="o">*</span> <span class="n">pi</span> <span class="o">*</span> <span class="mi">2</span><span class="p">);</span>
+
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">option</span><span class="o">==</span><span class="mi">2</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Calculating the area of a circle&quot;</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Enter Radius&quot;</span><span class="p">);</span>
+    <span class="kt">int</span> <span class="n">radi</span> <span class="o">=</span> <span class="n">object</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+    <span class="kt">double</span> <span class="n">pi</span><span class="o">=</span> <span class="mf">3.14</span><span class="p">;</span>
+    <span class="kt">double</span> <span class="n">area</span> <span class="o">=</span> <span class="n">Math</span><span class="p">.</span><span class="na">pow</span><span class="p">(</span><span class="n">radi</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">area</span> <span class="o">*</span> <span class="n">pi</span> <span class="p">);</span>
+    
+  
+  <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">option</span><span class="o">==</span><span class="mi">3</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Calculating Celsius&quot;</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Enter a temperature in Fahrenheit &quot;</span><span class="p">);</span>
+    <span class="kt">int</span> <span class="n">temperature</span> <span class="o">=</span> <span class="n">object</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+    <span class="kt">int</span> <span class="n">b</span><span class="o">=</span> <span class="n">temperature</span><span class="o">-</span><span class="mi">32</span><span class="p">;</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">b</span> <span class="o">*</span><span class="mi">5</span><span class="o">/</span><span class="mi">9</span><span class="o">+</span> <span class="s">&quot; degrees Celsius&quot;</span><span class="p">);</span>
+    
+
+  <span class="p">}</span><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">option</span><span class="o">==</span><span class="mi">4</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Calculating Centimeters&quot;</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Enter a measurement in inches &quot;</span><span class="p">);</span>
+    <span class="kt">int</span> <span class="n">inches</span> <span class="o">=</span> <span class="n">object</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+    <span class="kt">double</span> <span class="n">c</span><span class="o">=</span> <span class="n">inches</span><span class="o">*</span><span class="mf">2.54</span><span class="p">;</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">c</span> <span class="o">+</span> <span class="s">&quot; Centimeters&quot;</span><span class="p">);</span>
+
+  <span class="p">}</span><span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">option</span><span class="o">==</span><span class="mi">5</span><span class="p">){</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Calculating feet&quot;</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Enter a measurement in kilometers &quot;</span><span class="p">);</span>
+    <span class="kt">int</span> <span class="n">kilometers</span> <span class="o">=</span> <span class="n">object</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+    <span class="kt">double</span> <span class="n">k</span><span class="o">=</span> <span class="n">kilometers</span><span class="o">*</span><span class="mf">3280.84</span><span class="p">;</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="s">&quot; feet&quot;</span><span class="p">);</span>
+
+  <span class="p">}</span><span class="k">else</span> <span class="p">{</span>
+  <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Quitting system&quot;</span><span class="p">);</span>
+  <span class="k">break</span><span class="p">;</span>
+<span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">while</span> <span class="p">(</span><span class="n">option</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">);</span>
+  <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Quitting system&quot;</span><span class="p">);</span>
+  <span class="p">}</span>
+
+<span class="p">}</span>
+<span class="n">Console</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Quick Calculations!
+
+Option 1-2 for circle related problems, Options 3-4 for imperial to metric calculations, Option 5 for metric to imperial calculations
+
+Choose one of the following options: 
+Option 1: Calculating the Circumference of a circle 
+Option 2: Calculating the area of a circle 
+Option 3: Calculating Celsius from Fahrenheit 
+Option 4: Calculating Centimeters from Inches 
+Option 5: Calculating feet to kilometers 
+To escape: choose any other key on the keyboard
+Calculating Celsius
+Enter a temperature in Fahrenheit 
+-16 degrees Celsius
+Calculating Celsius
+Enter a temperature in Fahrenheit 
 </pre>
 </div>
 </div>
