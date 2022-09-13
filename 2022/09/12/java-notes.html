@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Java notes | Serafina Wong</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Java notes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Serafina’s ApCSA blog" />
+<meta property="og:description" content="Serafina’s ApCSA blog" />
+<link rel="canonical" href="https://lychee80.github.io/Test/2022/09/12/java-notes.html" />
+<meta property="og:url" content="https://lychee80.github.io/Test/2022/09/12/java-notes.html" />
+<meta property="og:site_name" content="Serafina Wong" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-09-12T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Java notes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-12T00:00:00-05:00","datePublished":"2022-09-12T00:00:00-05:00","description":"Serafina’s ApCSA blog","headline":"Java notes","mainEntityOfPage":{"@type":"WebPage","@id":"https://lychee80.github.io/Test/2022/09/12/java-notes.html"},"url":"https://lychee80.github.io/Test/2022/09/12/java-notes.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/Test/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://lychee80.github.io/Test/feed.xml" title="Serafina Wong" /><link rel="shortcut icon" type="image/x-icon" href="/Test/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/Test/">Serafina Wong</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Test/APCSACB/">Collegeboard</a><a class="page-link" href="/Test/APCSAPBL/">PBL</a><a class="page-link" href="/Test/about/">About Me</a><a class="page-link" href="/Test/search/">Search</a><a class="page-link" href="/Test/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Java notes</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-09-12T00:00:00-05:00" itemprop="datePublished">
+        Sep 12, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      3 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/Lychee80/Test/tree/master/_notebooks/6-2022-9-1-java-notes.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/Test/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/Lychee80/Test/master?filepath=_notebooks%2F6-2022-9-1-java-notes.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/Test/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/Lychee80/Test/blob/master/_notebooks/6-2022-9-1-java-notes.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/Test/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FLychee80%2FTest%2Fblob%2Fmaster%2F_notebooks%2F6-2022-9-1-java-notes.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/Test/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/6-2022-9-1-java-notes.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Primitives-vs-Non-primitives">Primitives vs Non-primitives<a class="anchor-link" href="#Primitives-vs-Non-primitives"> </a></h1><table>
+<thead><tr>
+<th>primitives</th>
+<th>Non-primitives</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Predefined</td>
+<td>done by you</td>
+</tr>
+<tr>
+<td>lowercase</td>
+<td>uppercase</td>
+</tr>
+<tr>
+<td>"Primitives"</td>
+<td>"Reference types"</td>
+</tr>
+<tr>
+<td>cannot call methods</td>
+<td>can call methods</td>
+</tr>
+<tr>
+<td>value</td>
+<td>can be null</td>
+</tr>
+<tr>
+<td>different sizes based on which primitive it is</td>
+<td>all same size</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Variable">Variable<a class="anchor-link" href="#Variable"> </a></h1><ul>
+<li>Variable names must use camelCase while method names use PascalCase</li>
+<li>Variable names are called identifiers</li>
+<li>Integers are used in byte,short, int, and long </li>
+<li>The amount of digits able to be used is in order from longest to shortest ^</li>
+<li>Decimals are used with float and double</li>
+<li>Typically for doubles,longs, and floats you need to have d, f, or "L" after the value but it works just fine normally without it (except for in floats- floats you need it)</li>
+<li>Float vs Double is that float is a lot more specific (less decimal places)</li>
+<li>chars also work for ascii values</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+      <span class="kt">int</span> <span class="n">num</span><span class="p">;</span> 
+      <span class="n">num</span><span class="o">=</span><span class="mi">20</span><span class="p">;</span> <span class="c1">//can define the variable later</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">num</span><span class="p">);</span><span class="c1">//the num is a parameter so you don&#39;t need null (though if you do use null, nothing will show)</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hello&quot;</span><span class="p">);</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;How are you?&quot;</span><span class="p">);</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">print</span><span class="p">(</span><span class="s">&quot;Will this be on another line?&quot;</span><span class="p">);</span>
+      <span class="c1">//System.out.print won&#39;t print the next line on another line unlike System.out.println()</span>
+      <span class="c1">//but the next line &quot;Hello&quot; will be on a different line than &quot;How are you&quot; but </span>
+      <span class="c1">//&quot;Will this be on another line&quot; won&#39;t</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot; No&quot;</span><span class="p">);</span>
+      <span class="cm">/* This is a multiline comment </span>
+<span class="cm">      unlike //</span>
+<span class="cm">       */</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">Main</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>20
+Hello
+How are you?
+Will this be on another line? No
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+      <span class="kt">int</span> <span class="n">p</span> <span class="o">=</span> <span class="mi">15</span><span class="p">;</span>
+      <span class="kt">int</span> <span class="n">m</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span> <span class="c1">//will overwrite the existing value</span>
+      <span class="kd">final</span> <span class="kt">int</span> <span class="n">z</span> <span class="o">=</span> <span class="n">p</span> <span class="o">*</span> <span class="n">m</span><span class="p">;</span> <span class="c1">//final makes it so it is impossible to overwrite</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">z</span><span class="p">);</span>
+      <span class="kt">char</span> <span class="n">letter</span> <span class="o">=</span> <span class="sc">&#39;M&#39;</span><span class="p">;</span> <span class="c1">//char is for a single letter and needs to be in single quotes</span>
+      <span class="kt">float</span> <span class="n">check</span><span class="o">=</span> <span class="mf">4.99f</span><span class="p">;</span> 
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">check</span><span class="p">);</span>
+      <span class="n">String</span> <span class="n">color</span> <span class="o">=</span> <span class="s">&quot;red&quot;</span><span class="p">;</span>  
+      <span class="n">String</span> <span class="n">shape</span> <span class="o">=</span> <span class="s">&quot;triangle&quot;</span><span class="p">;</span> 
+      <span class="n">String</span> <span class="n">description</span> <span class="o">=</span> <span class="n">color</span> <span class="o">+</span> <span class="n">shape</span><span class="p">;</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">description</span><span class="p">);</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">p</span><span class="o">*</span><span class="n">m</span><span class="p">);</span><span class="c1">// can do this or define for another value ex z</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">color</span><span class="p">.</span><span class="na">concat</span><span class="p">(</span><span class="n">shape</span><span class="p">));</span><span class="c1">//concatenation</span>
+
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">Main</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>450
+4.99
+redtriangle
+450
+redtriangle
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kt">double</span> <span class="n">a</span><span class="o">=</span><span class="mf">3.2</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="mf">9.444</span><span class="p">;</span> <span class="c1">//can define all together too</span>
+        <span class="kt">double</span> <span class="n">e</span><span class="p">,</span> <span class="n">f</span><span class="p">;</span> 
+        <span class="n">e</span><span class="o">=</span><span class="n">f</span><span class="o">=</span><span class="mf">0.88e4</span><span class="p">;</span> <span class="c1">// can define them together too, e4 or E4 means .88 x 10^4</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">a</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">e</span><span class="p">);</span>
+        <span class="kt">char</span> <span class="n">ascii</span><span class="o">=</span> <span class="mi">89</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">90</span><span class="p">;</span> 
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">ascii</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">Main</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>3.2
+8800.0
+Y
+Z
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Casting">Casting<a class="anchor-link" href="#Casting"> </a></h1><ul>
+<li>widening (automatic) short to large type byte to short to char to int to long to float to double </li>
+<li><p>narrowing (manual, need to declare) opposite ^</p>
+</li>
+<li><p>null means that there is no parameter but we are acknowledging that there is</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">){</span>
+        <span class="kt">int</span> <span class="n">shallot</span> <span class="o">=</span> <span class="mi">9</span><span class="p">;</span>
+        <span class="kt">double</span> <span class="n">shallots</span><span class="o">=</span><span class="n">shallot</span><span class="p">;</span> <span class="c1">//casting widening (changing from 9 --&gt; 9.0)</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">shallot</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;to&quot;</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">shallots</span> <span class="o">+</span> <span class="s">&quot;\n&quot;</span><span class="p">);</span>
+        <span class="kt">double</span> <span class="n">cups</span><span class="o">=</span><span class="mf">9.22</span><span class="p">;</span>
+        <span class="kt">int</span> <span class="n">cup</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">cups</span><span class="p">;</span><span class="c1">//casting narrowing (changing from 9.22--&gt; 9)</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">cups</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;to&quot;</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">cup</span><span class="p">);</span>
+        
+
+    <span class="p">}</span>
+<span class="p">}</span>
+<span class="n">Main</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>9
+to
+9.0
+
+9.22
+to
+9
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Operators">Operators<a class="anchor-link" href="#Operators"> </a></h1><ul>
+<li>addition, subtraction, multiplication, division, modulus, increment, decrement (+, -, *, /, %, ++, --)</li>
+<li>Assignment operators: =, +=, -=, *=, /=, %=, &amp;=</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Switches">Switches<a class="anchor-link" href="#Switches"> </a></h1><p>switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Strings">Strings<a class="anchor-link" href="#Strings"> </a></h1><ul>
+<li>if you add strings --&gt; concatenation</li>
+<li>if you add numbers --&gt; number </li>
+<li>In a string you can use \' to make '</li>
+<li>\" to make "</li>
+<li>\ \ to make \</li>
+<li>\n for a new line</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Check</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> 
+ <span class="p">}</span>
+ <span class="n">Check</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Code.org">Code.org<a class="anchor-link" href="#Code.org"> </a></h1><ul>
+<li>to insubstantiate do : ClassName objectName = new ClassName();</li>
+<li><p>syntax for inheritence is 
+public class Subclass extends SuperClass {</p>
+<p>public Subclass() {</p>
+
+<pre><code>super();
+</code></pre>
+<p>}
+}</p>
+</li>
+<li><p>Method Signature is name of method and parameter</p>
+</li>
+<li>void function means that it will do the code then stop </li>
+<li>sub class is the child of the parent (super)</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+  </div><a class="u-url" href="/Test/2022/09/12/java-notes.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/Test/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/Test/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/Test/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Serafina&#39;s ApCSA blog</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" target="_blank" title="fastai"><svg class="svg-icon grey"><use xlink:href="/Test/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" target="_blank" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/Test/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
