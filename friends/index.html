@@ -4,23 +4,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Serafina Wong | Serafina’s ApCSA blog</title>
+<title>friends | Serafina Wong</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Serafina Wong" />
+<meta property="og:title" content="friends" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Serafina’s ApCSA blog" />
-<meta property="og:description" content="Serafina’s ApCSA blog" />
-<link rel="canonical" href="https://lychee80.github.io/Test/" />
-<meta property="og:url" content="https://lychee80.github.io/Test/" />
+<meta name="description" content="Health.ly" />
+<meta property="og:description" content="Health.ly" />
+<link rel="canonical" href="https://lychee80.github.io/Test/friends/" />
+<meta property="og:url" content="https://lychee80.github.io/Test/friends/" />
 <meta property="og:site_name" content="Serafina Wong" />
-<meta property="og:image" content="https://lychee80.github.io/Test/images/logo.png" />
-<meta property="og:type" content="website" />
-<link rel="next" href="https://lychee80.github.io/Test/page2/" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://lychee80.github.io/Test/images/logo.png" />
-<meta property="twitter:title" content="Serafina Wong" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-09-28T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="friends" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Serafina’s ApCSA blog","headline":"Serafina Wong","image":"https://lychee80.github.io/Test/images/logo.png","name":"Serafina Wong","url":"https://lychee80.github.io/Test/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-28T00:00:00-05:00","datePublished":"2022-09-28T00:00:00-05:00","description":"Health.ly","headline":"friends","mainEntityOfPage":{"@type":"WebPage","@id":"https://lychee80.github.io/Test/friends/"},"url":"https://lychee80.github.io/Test/friends/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/Test/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://lychee80.github.io/Test/feed.xml" title="Serafina Wong" /><link rel="shortcut icon" type="image/x-icon" href="/Test/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -72,129 +70,64 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><html>
+        <html>
+<head>
+<title>Health.ly</title>
+<style>
+    .button {
+      border: none;
+      padding: 20px 40px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+</style>
+</head>
+<script>
+    function row(){
+        var name =document.getElementById('name').value;
+        var likes =document.getElementById('likes').value;
+        var dislikes =document.getElementById('dislikes').value;
+        var age =document.getElementById('age').value;
+        var special =document.getElementById('special').value;
+        var table = document.getElementsByTagName('table')[0];
+        var rows = table.insertRow(0);
+        var cell = newRow.insertCell(0);
+        var cell1 = newRow.insertCell(1);
+        var cell2 = newRow.insertCell(2);
+        var cell3 = newRow.insertCell(3);
+        var cell4 = newRow.insertCell(4);
+
+        cell.innerHTML=name;
+        cell.innerHTML=likes;
+        cell.innerHTML=dislikes;
+        cell.innerHTML=age;
+        cell.innerHTML=special;
+    }
+    </script>
 <body>
-
-<h1>Welcome to my blog!</h1>
-<h2>How to Navigate</h2>
-
-<p>In the upper right corner is the tabs for all my compsci work (organized in 
-    two separate ways- by collegeboard units vs by each project. ) I also have some extra work from my other classes underneath.
-</p>
+    name: <input type="text" name="name" id="name"/>
+    likes: <input type="text" likes="likes" id="likes"/>
+    dislikes: <input type="text" name="dislikes" id="dislikes"/>
+    age: <input type="text" name="age" id="age"/>
+    special: <input type="text" name="special" id="special"/>
+<h1>Make new friends!</h1>
+<button type="button" onclick="alert('friend added!')">Click to add friends</button>
+<table>
+    <tr>
+        <th>Friend Name</th>
+        <th>Likes</th>
+        <th>dislikes</th>
+        <th>Age</th>
+        <th>Something Special</th>
+    </tr>
+    </table>
 
 </body>
 </html>
-
-<h1 id="extra">Extra</h1>
-<h2 id="apel-hw">Apel Hw</h2>
-<ol>
-  <li><a href="https://lychee80.github.io/Test/2022/08/28/terms.html">Apel vocab</a></li>
-  <li><a href="https://lychee80.github.io/Test/2022/08/28/precis.html">Apel precis</a></li>
-</ol>
-
-
-
-  
-
-  <!-- Hide posts if front matter flag hide:true -->
-  
-  
-
-  <!-- Sort posts by rank, then date -->
-  
-  
-  
-
- 
-  
-
-   <!-- Assemble final sorted posts array -->
-  
-  <ul class="post-list"><li><h3>
-    <a class="post-link" href="/Test/friends/">
-    friends
-    </a>
-</h3><p class="post-meta">Sep 28, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/Test/2022/09/27/java-lessons.html">
-    Java Lesson
-    </a>
-</h3><p class="post-meta">Sep 27, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/Test/2022/09/27/java-notes.html">
-    Java notes
-    </a>
-</h3><p class="post-meta">Sep 27, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/Test/2022/09/27/adjf;.html">
-    Title
-    </a>
-</h3><p class="post-meta">Sep 27, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/Test/2022/09/27/bash-checks.html">
-    Bash Checks
-    </a>
-</h3><p class="post-meta">Sep 27, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/Test/2022/09/27/console-copy.html">
-    Java Console
-    </a>
-</h3><p class="post-meta">Sep 27, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/Test/2022/09/27/fibo.html">
-    Fibo code
-    </a>
-</h3><p class="post-meta">Sep 27, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/Test/2022/09/27/terms.html">
-    Terms
-    </a>
-</h3><p class="post-meta">Sep 27, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/Test/2022/09/27/pythonHelloworld.html">
-    Python Hello World post
-    </a>
-</h3><p class="post-meta">Sep 27, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/Test/2022/09/27/javaHelloworld.html">
-    Java Hello World
-    </a>
-</h3><p class="post-meta">Sep 27, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/Test/2022/09/27/precis.html">
-    Precis
-    </a>
-</h3><p class="post-meta">Sep 27, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/Test/2022/09/27/primitives.html">
-    Primitives
-    </a>
-</h3><p class="post-meta">Sep 27, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/Test/2022/09/12/javaHelloworld.html">
-    Java Hello World
-    </a>
-</h3><p class="post-meta">Sep 12, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/Test/2022/09/12/java-lessons.html">
-    Java Lesson
-    </a>
-</h3><p class="post-meta">Sep 12, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/Test/2022/09/12/console-copy.html">
-    Java Console
-    </a>
-</h3><p class="post-meta">Sep 12, 2022</p>
-</li></ul>
-
-    
-      <div class="pager">
-        <ul class="pagination">
-          <li><div class="pager-edge">•</div></li>
-          <li><div class="current-page">1</div></li>
-          <li><a href="/Test/page2/" class="next-page">2</a></li>
-        </ul>
-      </div></div>
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/Test/"></data>
