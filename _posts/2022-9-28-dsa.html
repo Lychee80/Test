@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+---
+layout: default
+permalink: /friends/
+title: friends
+search_exclude: true
+---
+
 <html>
 <head>
 <title>Health.ly</title>
@@ -13,8 +19,30 @@
       margin: 4px 2px;
       cursor: pointer;
     }
-
+</style>
 </head>
+<script>
+    function row(){
+        var name =document.getElementById('name').value;
+        var likes =document.getElementById('likes').value;
+        var dislikes =document.getElementById('dislikes').value;
+        var age =document.getElementById('age').value;
+        var special =document.getElementById('special').value;
+        var table = document.getElementsByTagName('table')[0];
+        var rows = table.insertRow(0);
+        var cell = newRow.insertCell(0);
+        var cell1 = newRow.insertCell(1);
+        var cell2 = newRow.insertCell(2);
+        var cell3 = newRow.insertCell(3);
+        var cell4 = newRow.insertCell(4);
+
+        cell.innerHTML=name;
+        cell.innerHTML=likes;
+        cell.innerHTML=dislikes;
+        cell.innerHTML=age;
+        cell.innerHTML=special;
+    }
+    </script>
 <body>
     name: <input type="text" name="name" id="name"/>
     likes: <input type="text" likes="likes" id="likes"/>
