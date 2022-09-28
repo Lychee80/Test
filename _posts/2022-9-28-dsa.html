@@ -38,10 +38,10 @@ search_exclude: true
         var cell4 = newRow.insertCell(4);
 
         cell.innerHTML=name;
-        cell.innerHTML=likes;
-        cell.innerHTML=dislikes;
-        cell.innerHTML=age;
-        cell.innerHTML=special;
+        cell1.innerHTML=likes;
+        cell2.innerHTML=dislikes;
+        cell3.innerHTML=age;
+        cell4.innerHTML=special;
     }
     </script>
 <body>
@@ -51,7 +51,7 @@ search_exclude: true
     dislikes: <input type="text" name="dislikes" id="dislikes"/><br></br>
     age: <input type="text" name="age" id="age"/><br></br>
     special: <input type="text" name="special" id="special"/><br></br>
-<button type="button" onclick="row();" >Click to add friends</button>
+<button type="button" onclick="row();">Click to add friends</button><br></br>
 <table>
     <tr>
         <th>Friend Name</th>
