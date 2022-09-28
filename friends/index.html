@@ -88,7 +88,7 @@ window.onload = wrap_img;
 </style>
 </head>
 <script>
-    function row(){
+    function addRow(){
         var name =document.getElementById('name').value;
         var likes =document.getElementById('likes').value;
         var dislikes =document.getElementById('dislikes').value;
@@ -116,7 +116,7 @@ window.onload = wrap_img;
     dislikes: <input type="text" name="dislikes" id="dislikes"/><br></br>
     age: <input type="text" name="age" id="age"/><br></br>
     special: <input type="text" name="special" id="special"/><br></br>
-<button type="button" onclick="row();">Click to add friends</button><br></br>
+<button onclick="addRow();">Click to add friends</button><br></br>
 <table>
     <tr>
         <th>Friend Name</th>
