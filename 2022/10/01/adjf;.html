@@ -132,44 +132,17 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-python"><pre><span></span><span class="o">&lt;</span><span class="err">!</span><span class="n">DOCTYPE</span> <span class="n">html</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="n">html</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="n">head</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="n">title</span><span class="o">&gt;</span><span class="n">Health</span><span class="o">.</span><span class="n">ly</span><span class="o">&lt;/</span><span class="n">title</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="n">style</span><span class="o">&gt;</span>
-    <span class="o">.</span><span class="n">button</span> <span class="p">{</span>
-      <span class="n">border</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span>
-      <span class="n">padding</span><span class="p">:</span> <span class="mi">20</span><span class="n">px</span> <span class="mi">40</span><span class="n">px</span><span class="p">;</span>
-      <span class="n">text</span><span class="o">-</span><span class="n">align</span><span class="p">:</span> <span class="n">center</span><span class="p">;</span>
-      <span class="n">text</span><span class="o">-</span><span class="n">decoration</span><span class="p">:</span> <span class="n">none</span><span class="p">;</span>
-      <span class="n">display</span><span class="p">:</span> <span class="n">inline</span><span class="o">-</span><span class="n">block</span><span class="p">;</span>
-      <span class="n">font</span><span class="o">-</span><span class="n">size</span><span class="p">:</span> <span class="mi">16</span><span class="n">px</span><span class="p">;</span>
-      <span class="n">margin</span><span class="p">:</span> <span class="mi">4</span><span class="n">px</span> <span class="mi">2</span><span class="n">px</span><span class="p">;</span>
-      <span class="n">cursor</span><span class="p">:</span> <span class="n">pointer</span><span class="p">;</span>
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="n">args</span><span class="p">){</span>
+        <span class="kt">int</span> <span class="n">arr</span><span class="o">[]</span><span class="p">;</span>
+        <span class="n">arr</span><span class="o">=</span><span class="k">new</span> <span class="kt">int</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span><span class="p">;</span>
+        <span class="n">arr</span><span class="o">[</span><span class="mi">0</span><span class="o">]=</span><span class="mi">0</span><span class="p">;</span>
+        <span class="n">arr</span><span class="o">[</span><span class="mi">1</span><span class="o">]=</span><span class="mi">2</span><span class="p">;</span>
+        <span class="n">arr</span><span class="o">[</span><span class="mi">2</span><span class="o">]=</span><span class="mi">3</span><span class="p">;</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">arr</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span><span class="p">);</span>
     <span class="p">}</span>
-
-    <span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span>
-        <span class="n">function</span> <span class="n">row</span><span class="p">(){</span>
-            <span class="n">var</span> <span class="n">name</span><span class="o">=</span><span class="n">document</span><span class="o">.</span><span class="n">getElementbyId</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-        <span class="p">}</span>
-        <span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">head</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="n">body</span><span class="o">&gt;</span>
-    
-<span class="o">&lt;</span><span class="n">h1</span><span class="o">&gt;</span><span class="n">Make</span> <span class="n">new</span> <span class="n">friends</span><span class="err">!</span><span class="o">&lt;/</span><span class="n">h1</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="n">button</span> <span class="nb">type</span><span class="o">=</span><span class="s2">&quot;button&quot;</span> <span class="n">onclick</span><span class="o">=</span><span class="s2">&quot;alert(&#39;friend added!&#39;)&quot;</span><span class="o">&gt;</span><span class="n">Click</span> <span class="n">to</span> <span class="n">add</span> <span class="n">friends</span><span class="o">&lt;/</span><span class="n">button</span><span class="o">&gt;</span>
-<span class="o">&lt;</span><span class="n">table</span><span class="o">&gt;</span>
-    <span class="o">&lt;</span><span class="n">tr</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Friend</span> <span class="n">Name</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Likes</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">dislikes</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Age</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-        <span class="o">&lt;</span><span class="n">th</span><span class="o">&gt;</span><span class="n">Something</span> <span class="n">Special</span><span class="o">&lt;/</span><span class="n">th</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">tr</span><span class="o">&gt;</span>
-    <span class="o">&lt;/</span><span class="n">table</span><span class="o">&gt;</span>
-
-<span class="o">&lt;/</span><span class="n">body</span><span class="o">&gt;</span>
-<span class="o">&lt;/</span><span class="n">html</span><span class="o">&gt;</span>
+<span class="p">}</span>
+<span class="n">Main</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
 </pre></div>
 
     </div>
@@ -183,11 +156,10 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_text output_error">
 <pre>
-<span class="ansi-red-intense-fg ansi-bold">Running cells with &#39;Python 3.10.6 64-bit&#39; requires ipykernel package.
-</span>
-<span class="ansi-red-intense-fg ansi-bold">Run the following command to install &#39;ipykernel&#39; into the Python environment. 
-</span>
-<span class="ansi-red-intense-fg ansi-bold">Command: &#39;/usr/local/bin/python3 -m pip install ipykernel -U --user --force-reinstall&#39;</span></pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">java.lang.ArrayIndexOutOfBoundsException: Index 2 out of bounds for length 2</span>
+<span class="ansi-red-intense-fg ansi-bold">	at Main.main(#15:7)</span>
+<span class="ansi-red-intense-fg ansi-bold">	at .(#20:1)</span></pre>
 </div>
 </div>
 
