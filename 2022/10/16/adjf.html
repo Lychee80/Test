@@ -449,24 +449,31 @@ Gunther the great has perished
 <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Eating</span> <span class="p">{</span>
 
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">eat</span><span class="p">(</span><span class="n">Human</span> <span class="n">Human1</span><span class="p">)</span> <span class="p">{</span>
-        
-        
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Human1</span><span class="p">.</span><span class="na">getName</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; has an HP of &quot;</span> <span class="o">+</span><span class="n">Human1</span><span class="p">.</span><span class="na">getHP</span><span class="p">()</span> <span class="p">);</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Human1</span><span class="p">.</span><span class="na">getName</span><span class="p">()</span><span class="o">+</span> <span class="s">&quot; is eating &quot;</span> <span class="o">+</span> <span class="n">Human1</span><span class="p">.</span><span class="na">getFood</span><span class="p">());</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">Human1</span><span class="p">.</span><span class="na">getLuck</span><span class="p">())</span> <span class="p">{</span>
-            <span class="n">Human1</span><span class="p">.</span><span class="na">takeDMG</span><span class="p">(</span><span class="n">Human1</span><span class="p">.</span><span class="na">getDMG</span><span class="p">());</span>
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Human1</span><span class="p">.</span><span class="na">getName</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot;chokes!&quot;</span><span class="p">);</span>
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Human1</span><span class="p">.</span><span class="na">getName</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; takes &quot;</span> <span class="o">+</span> <span class="n">Human1</span><span class="p">.</span><span class="na">getDMG</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; damage&quot;</span><span class="p">);</span>
-        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Human1</span><span class="p">.</span><span class="na">getName</span><span class="p">()</span><span class="o">+</span><span class="s">&quot; takes no damage&quot;</span><span class="p">);</span>
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Human1</span><span class="p">.</span><span class="na">getName</span><span class="p">()</span><span class="o">+</span><span class="s">&quot; takes another bite&quot;</span><span class="p">);</span>
-        <span class="p">}</span>
-
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Human1</span><span class="p">.</span><span class="na">getName</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; HP: &quot;</span> <span class="o">+</span> <span class="n">Human1</span><span class="p">.</span><span class="na">getHP</span><span class="p">());</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
         
-        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">Human1</span><span class="p">.</span><span class="na">isAlive</span><span class="p">())</span> <span class="p">{</span>
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Human1</span><span class="p">.</span><span class="na">getName</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; has died&quot;</span><span class="p">);</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">x</span><span class="o">&lt;</span><span class="mi">5</span><span class="p">;</span> <span class="n">x</span> <span class="o">++</span> <span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span> <span class="o">&lt;</span> <span class="n">Human1</span><span class="p">.</span><span class="na">getLuck</span><span class="p">())</span> <span class="p">{</span>
+                <span class="n">Human1</span><span class="p">.</span><span class="na">takeDMG</span><span class="p">(</span><span class="n">Human1</span><span class="p">.</span><span class="na">getDMG</span><span class="p">());</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Human1</span><span class="p">.</span><span class="na">getName</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; chokes!&quot;</span><span class="p">);</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Human1</span><span class="p">.</span><span class="na">getName</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; takes &quot;</span> <span class="o">+</span> <span class="n">Human1</span><span class="p">.</span><span class="na">getDMG</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; damage&quot;</span><span class="p">);</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Human1</span><span class="p">.</span><span class="na">getName</span><span class="p">()</span><span class="o">+</span><span class="s">&quot; takes no damage&quot;</span><span class="p">);</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Human1</span><span class="p">.</span><span class="na">getName</span><span class="p">()</span><span class="o">+</span><span class="s">&quot; takes another bite&quot;</span><span class="p">);</span>
+            <span class="p">}</span>
+    
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Human1</span><span class="p">.</span><span class="na">getName</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; HP: &quot;</span> <span class="o">+</span> <span class="n">Human1</span><span class="p">.</span><span class="na">getHP</span><span class="p">());</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">();</span>
+            
+            <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">Human1</span><span class="p">.</span><span class="na">isAlive</span><span class="p">())</span> <span class="p">{</span>
+                <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Human1</span><span class="p">.</span><span class="na">getName</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; has died&quot;</span><span class="p">);</span>
+            <span class="p">}</span>
+            
         <span class="p">}</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">Human1</span><span class="p">.</span><span class="na">isAlive</span><span class="p">())</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">Human1</span><span class="p">.</span><span class="na">getName</span><span class="p">()</span> <span class="o">+</span> <span class="s">&quot; survives!&quot;</span><span class="p">);</span>
+        <span class="p">}</span>
+        
     <span class="p">}</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">Human</span> <span class="n">Human1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Human</span><span class="p">();</span>
@@ -493,11 +500,29 @@ Gunther the great has perished
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Sarah is eating apple
-Sarahchokes!
+<pre>Sarah has an HP of 15
+Sarah is eating apple
+Sarah chokes!
 Sarah takes 1 damage
 Sarah HP: 14
 
+Sarah chokes!
+Sarah takes 1 damage
+Sarah HP: 13
+
+Sarah takes no damage
+Sarah takes another bite
+Sarah HP: 13
+
+Sarah chokes!
+Sarah takes 1 damage
+Sarah HP: 12
+
+Sarah chokes!
+Sarah takes 1 damage
+Sarah HP: 11
+
+Sarah survives!
 </pre>
 </div>
 </div>
