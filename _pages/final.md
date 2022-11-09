@@ -4,12 +4,18 @@ title: Final
 permalink: /final/
 ---
 # Final Collegeboard (38/40)
+<img width="1402" alt="Screen Shot 2022-11-09 at 10 01 55 AM" src="https://user-images.githubusercontent.com/111522883/200912295-54b07a6c-73f5-4287-8e9b-ef1b9ac86956.png">
+I'm not that happy with my score cause even though it is pretty good I ended up having to search up a lot of problems and I know that there are several topics that I still need to work on.
 
 ## Question 7 
 I didn't read the question carefully and didn't notice that the new Person object was called student and so we should be referring to student when setting the name
+<img width="1054" alt="Screen Shot 2022-11-09 at 10 02 46 AM" src="https://user-images.githubusercontent.com/111522883/200912313-edc3bc88-597e-4e8b-9d02-4ad7e47d6b80.png">
+
 
 ## Question 40 
 I was kinda confused about what the question was asking for but it makes a lot more sense after reading the answer
+<img width="957" alt="Screen Shot 2022-11-09 at 10 04 10 AM" src="https://user-images.githubusercontent.com/111522883/200912344-21e57c60-8477-4a4e-80c5-cf1391bc9f1f.png">
+
 
 ## Test Reflection
 
