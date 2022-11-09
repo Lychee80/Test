@@ -102,7 +102,7 @@
     
         ,"post9": {
             "title": "Array Unit Hw",
-            "content": "import java.util.Arrays; public class Array { public static void main(String[] args) { int[] array = {1, 2, 3}; System.out.println(&quot;Original: &quot;+Arrays.toString(array)); int x = array[0]; array[0] = array[array.length-1]; array[array.length-1] = x; System.out.println(&quot;New: &quot;+Arrays.toString(array)); } } Array.main(null); . import java.util.Arrays; public class Array { public static boolean Sort(int[] a) { int i; for(i = 0; i &lt; a.length; i ++);{ if (a[i] &lt; a[i+1]) { return true; } else { return false; } } } public static void main(String[] args) { int ar[] = {3,5,6,7}; System.out.println(Sort(ar)); } } Array.main(null); .",
+            "content": "import java.util.Arrays; public class Array { public static void main(String[] args) { int[] array = {1, 2, 3}; System.out.println(&quot;Original: &quot;+Arrays.toString(array)); int x = array[0]; array[0] = array[array.length-1]; array[array.length-1] = x; System.out.println(&quot;New: &quot;+Arrays.toString(array)); } } Array.main(null); . import java.util.Arrays; public class Array { public static boolean Sort(int[] a) { int i; for(i = 0; i &lt; a.length; i ++);{ if (a[i] &lt; a[i+1]) { return true; } else { return false; } } } public static void main(String[] args) { int ar[] = {1,2,3,4}; System.out.println(Sort(ar)); } } Array.main(null); .",
             "url": "https://lychee80.github.io/Test/2022/11/08/hw.html",
             "relUrl": "/2022/11/08/hw.html",
             "date": " • Nov 8, 2022"
@@ -271,6 +271,22 @@
   
 
   
+      ,"page4": {
+          "title": "Final",
+          "content": "Final Collegeboard (38/40) . Question 7 . I didn’t read the question carefully and didn’t notice that the new Person object was called student and so we should be referring to student when setting the name . Question 40 . I was kinda confused about what the question was asking for but it makes a lot more sense after reading the answer . Test Reflection . I think I need to study Java a lot more since I needed to search up a lot of things when taking this test. I was confused about a lot of questions which kinda shows that I still have room to grow and learn. Some of the parts that I really needed to work on is arrays since this is a big part of the test and it made up a majority of the questions. I was confused a lot on the looping through an array part and had to get help. Another thing that I got really confused about was the substrings and this I had to get help. I’m still a bit lost about substrings so this is one of the things I need to work on. . Trimester Reflection . I think this trimester I had a lot of problems with time management and this kind of impacted my work in this class and just in school in general and so moving forward this is something I really want to work on. I also felt that it was kind of rough for me too since I went into this class not really knowing much and having not taking CSP beforehand and with little experience and I think that I kind of overestimated myself and so next trimester I think I really need work harder in order to make up for some parts of knowledge that I just lacked. However, overall this trimester was a really fun experience and I learned a lot through just being uncomfortable and going through things that I just didn’t know. .",
+          "url": "https://lychee80.github.io/Test/final/",
+          "relUrl": "/final/",
+          "date": ""
+      }
+      
+  
+
+  
+
+  
+  
+
+  
 
   
   
@@ -281,11 +297,6 @@
   
 
   
-
-  
-  
-
-  
   
 
   
@@ -294,7 +305,7 @@
   
 
   
-      ,"page13": {
+      ,"page14": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://lychee80.github.io/Test/robots.txt",
