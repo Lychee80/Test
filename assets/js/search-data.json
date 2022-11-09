@@ -102,7 +102,7 @@
     
         ,"post9": {
             "title": "Array Unit Hw",
-            "content": "import java.util.Arrays; public class Array { public static void main(String[] args) { int[] array = {1, 2, 3}; System.out.println(&quot;Original: &quot;+Arrays.toString(array)); int x = array[0]; array[0] = array[array.length-1]; array[array.length-1] = x; System.out.println(&quot;New: &quot;+Arrays.toString(array)); } } Array.main(null); . import java.util.Arrays; public class Array { public static boolean Sort(int[] a) { int i; for(i = 0; i &lt; a.length; i ++);{ if (a[i] &lt; a[i+1]) { return true; } else { return false; } } } public static void main(String[] args) { int ar[] = {1,2,3,4}; System.out.println(Sort(ar)); } } Array.main(null); .",
+            "content": "import java.util.Arrays; public class Array { public static void main(String[] args) { int[] array = {1, 2, 3}; System.out.println(&quot;Original: &quot;+Arrays.toString(array)); int x = array[0]; array[0] = array[array.length-1]; array[array.length-1] = x; System.out.println(&quot;New: &quot;+Arrays.toString(array)); } } Array.main(null); . import java.util.Arrays; public class Array { public static boolean Sort(int[] a) { int i; for(i = 0; i &lt; a.length; i ++);{ if (a[i] &lt; a[i+1]) { return true; } else { return false; } } } public static void main(String[] args) { int ar[] = {1,2,3}; System.out.println(Sort(ar)); } } Array.main(null); . java.lang.ArrayIndexOutOfBoundsException: Index 3 out of bounds for length 3 at Array.Sort(#17:8) at Array.main(#17:18) at .(#24:1) .",
             "url": "https://lychee80.github.io/Test/2022/11/08/hw.html",
             "relUrl": "/2022/11/08/hw.html",
             "date": " • Nov 8, 2022"
