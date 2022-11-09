@@ -189,8 +189,8 @@
   
     
         ,"post17": {
-            "title": "Title",
-            "content": "Iteration HW Unit 4 . import java.util.Scanner; class Console { public static void main(String[] args) { int num = (int)(Math.random() * 101); System.out.println(&quot;Guess a number! &quot; + num); Scanner object = new Scanner(System.in); while( object.nextInt() != num){ int test = object.nextInt(); if(test&lt;num){ System.out.println(&quot; Too low! Try again&quot;); } else if (test&gt;num){ System.out.println(&quot;Too High! Try again&quot;); } } System.out.println(&quot;You got it! The answer is &quot; + num); } } Console.main(null); . Guess a number! 94 Too High! Try again Too low! Try again You got it! The answer is 94 .",
+            "title": "Iteration HW Unit 4",
+            "content": "import java.util.Scanner; class Console { public static void main(String[] args) { int num = (int)(Math.random() * 101); System.out.println(&quot;Guess a number! &quot; + num); Scanner object = new Scanner(System.in); while( object.nextInt() != num){ int test = object.nextInt(); if(test&lt;num){ System.out.println(&quot; Too low! Try again&quot;); } else if (test&gt;num){ System.out.println(&quot;Too High! Try again&quot;); } } System.out.println(&quot;You got it! The answer is &quot; + num); } } Console.main(null); . Guess a number! 94 Too High! Try again Too low! Try again You got it! The answer is 94 .",
             "url": "https://lychee80.github.io/Test/2022/10/24/hw.html",
             "relUrl": "/2022/10/24/hw.html",
             "date": " • Oct 24, 2022"
@@ -200,7 +200,7 @@
   
     
         ,"post18": {
-            "title": "Title",
+            "title": "Homework",
             "content": "import java.util.Scanner; public class Checker { public static void main(String[] args) { int number; // Create a Scanner object for keyboard input. Scanner keyboard = new Scanner(System.in); // Get a number from the user. System.out.print(&quot;Enter a number in the range of 1 through 100: &quot;); number = keyboard.nextInt(); while (1&lt;number&lt;100) { System.out.print(&quot;Invalid input. Enter a number in the range &quot; + &quot;of 1 through 100: &quot;); number = keyboard.nextInt(); } } } . public class LoopConversion { public static void main(String[] args) { //convert to for loop for(int count=0; count &lt; 5; count++) { System.out.println(&quot;count is &quot; + count); } } } LoopConversion.main(null); . public class Clock { public static void main(String[] args) { for(int hours = 1; hours &lt;= 12; hours++) { for (int minutes = 0; minutes &lt;= 59; minutes++) { for (int seconds = 0; seconds &lt;= 59; seconds++) { System.out.printf(&quot;%02d:%02d:%02d n&quot;, hours, minutes, seconds); } } } } } Clock.main(null); . public class Main { public static void main(String[] args){ int i=0; while(i&lt;5){ System.out.println(i); i++; } } } Main.main(null); . 0 1 2 3 4 . public class Main{ public static void main(String[] args){ for(int i=0; i&lt;5; i++){ System.out.println(i); } } } Main.main(null); . 0 1 2 3 4 . public class Main{ public static void main(String[] args){ for(int i=0; i&lt;5; i++){ System.out.println(i); } } public static int } Main.main(null); .",
             "url": "https://lychee80.github.io/Test/2022/10/19/unit4hw.html",
             "relUrl": "/2022/10/19/unit4hw.html",
