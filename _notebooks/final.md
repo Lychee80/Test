@@ -3,7 +3,7 @@ layout: page
 title: Final
 permalink: /final/
 ---
-# Final Collegeboard
+# Final Collegeboard (38/40)
 
 ## Question 7 
 I didn't read the question carefully and didn't notice that the new Person object was called student and so we should be referring to student when setting the name
