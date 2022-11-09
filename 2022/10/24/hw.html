@@ -125,6 +125,13 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Iteration HW Unit 4</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -136,21 +143,20 @@ window.onload = wrap_img;
 
 <span class="kd">class</span> <span class="nc">Console</span> <span class="p">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Guess a number!&quot;</span><span class="p">);</span>
-    
+    <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">101</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Guess a number! &quot;</span> <span class="o">+</span> <span class="n">num</span><span class="p">);</span>
     <span class="n">Scanner</span> <span class="n">object</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-    <span class="kt">int</span> <span class="n">option</span> <span class="o">=</span><span class="n">object</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-    
-    <span class="k">while</span><span class="p">(</span><span class="n">option</span><span class="o">!=</span> <span class="mi">23</span><span class="p">){</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">option</span><span class="o">&lt;</span> <span class="mi">23</span><span class="p">){</span>
+  
+    <span class="k">while</span><span class="p">(</span> <span class="n">object</span><span class="p">.</span><span class="na">nextInt</span><span class="p">()</span> <span class="o">!=</span> <span class="n">num</span><span class="p">){</span>
+      <span class="kt">int</span> <span class="n">test</span> <span class="o">=</span> <span class="n">object</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">test</span><span class="o">&lt;</span><span class="n">num</span><span class="p">){</span>
             <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot; Too low! Try again&quot;</span><span class="p">);</span>
-            <span class="kt">int</span> <span class="n">option</span> <span class="o">=</span><span class="n">object</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-          <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">option</span><span class="o">&gt;</span> <span class="mi">23</span><span class="p">){</span>
+          <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">test</span><span class="o">&gt;</span><span class="n">num</span><span class="p">){</span>
             <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Too High! Try again&quot;</span><span class="p">);</span>
-            <span class="kt">int</span> <span class="n">option</span> <span class="o">=</span><span class="n">object</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
           <span class="p">}</span> 
+          
     <span class="p">}</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You got it! The answer is 23&quot;</span><span class="p">);</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You got it! The answer is &quot;</span> <span class="o">+</span> <span class="n">num</span><span class="p">);</span>
 <span class="p">}</span>
   <span class="p">}</span>
 
@@ -166,13 +172,11 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">            </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">int option =object.nextInt();</span>
-<span class="ansi-red-intense-fg ansi-bold">variable option is already defined in method main(java.lang.String[])</span>
-
-<span class="ansi-black-intense-fg ansi-bold">|   </span><span class="ansi-black-intense-fg ansi-bold">            </span><span class="ansi-black-intense-fg ansi-red-bg ansi-bold">int option =object.nextInt();</span>
-<span class="ansi-red-intense-fg ansi-bold">variable option is already defined in method main(java.lang.String[])</span>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Guess a number! 94
+Too High! Try again
+ Too low! Try again
+You got it! The answer is 94
 </pre>
 </div>
 </div>
