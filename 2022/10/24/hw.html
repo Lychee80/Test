@@ -136,20 +136,22 @@ window.onload = wrap_img;
 
 <span class="kd">class</span> <span class="nc">Console</span> <span class="p">{</span>
   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">Scanner</span> <span class="n">game</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
+    <span class="kt">boolean</span> <span class="n">start</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
     <span class="kt">int</span> <span class="n">num</span> <span class="o">=</span> <span class="p">(</span><span class="kt">int</span><span class="p">)(</span><span class="n">Math</span><span class="p">.</span><span class="na">random</span><span class="p">()</span> <span class="o">*</span> <span class="mi">101</span><span class="p">);</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Guess a number! &quot;</span> <span class="o">+</span> <span class="n">num</span><span class="p">);</span>
-    <span class="n">Scanner</span> <span class="n">object</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">);</span>
-  
-    <span class="k">while</span><span class="p">(</span> <span class="n">object</span><span class="p">.</span><span class="na">nextInt</span><span class="p">()</span> <span class="o">!=</span> <span class="n">num</span><span class="p">){</span>
-      <span class="kt">int</span> <span class="n">test</span> <span class="o">=</span> <span class="n">object</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">test</span><span class="o">&lt;</span><span class="n">num</span><span class="p">){</span>
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot; Too low! Try again&quot;</span><span class="p">);</span>
-          <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">test</span><span class="o">&gt;</span><span class="n">num</span><span class="p">){</span>
-            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Too High! Try again&quot;</span><span class="p">);</span>
-          <span class="p">}</span> 
-          
+    <span class="k">while</span> <span class="p">(</span><span class="n">start</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Guessing Game! The range is an answer between 1-100 &quot;</span><span class="p">);</span>
+       
+        <span class="kt">int</span> <span class="n">input</span><span class="o">=</span> <span class="n">game</span><span class="p">.</span><span class="na">nextInt</span><span class="p">();</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">input</span> <span class="o">&gt;</span> <span class="n">num</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">input</span><span class="o">+</span> <span class="s">&quot; is too high! Try again&quot;</span> <span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">input</span> <span class="o">&lt;</span> <span class="n">num</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span> <span class="n">input</span><span class="o">+</span> <span class="s">&quot; is too low! Try again&quot;</span> <span class="p">);</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">input</span> <span class="o">==</span> <span class="n">num</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You got it! The answer is &quot;</span> <span class="o">+</span> <span class="n">num</span><span class="p">);</span>
+            <span class="n">start</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+        <span class="p">}</span> 
     <span class="p">}</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;You got it! The answer is &quot;</span> <span class="o">+</span> <span class="n">num</span><span class="p">);</span>
 <span class="p">}</span>
   <span class="p">}</span>
 
@@ -166,10 +168,22 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Guess a number! 94
-Too High! Try again
- Too low! Try again
-You got it! The answer is 94
+<pre>Guessing Game! The range is an answer between 1-100 
+50 is too low! Try again
+Guessing Game! The range is an answer between 1-100 
+70 is too low! Try again
+Guessing Game! The range is an answer between 1-100 
+80 is too low! Try again
+Guessing Game! The range is an answer between 1-100 
+90 is too high! Try again
+Guessing Game! The range is an answer between 1-100 
+85 is too high! Try again
+Guessing Game! The range is an answer between 1-100 
+83 is too high! Try again
+Guessing Game! The range is an answer between 1-100 
+82 is too high! Try again
+Guessing Game! The range is an answer between 1-100 
+You got it! The answer is 81
 </pre>
 </div>
 </div>
@@ -208,7 +222,21 @@ You got it! The answer is 94
       </div>
     </div>
 
-    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" target="_blank" title="fastai"><svg class="svg-icon grey"><use xlink:href="/Test/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" target="_blank" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/Test/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="https://github.com/exampleUser" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/Test/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://twitter.com/exampleUser" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/Test/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+</ul>
 </div>
 
   </div>
