@@ -4,9 +4,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Wrapper Classes | Serafina Wong</title>
+<title>Unit 1-5 Blog | Serafina Wong</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Wrapper Classes" />
+<meta property="og:title" content="Unit 1-5 Blog" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Serafina’s ApCSA blog" />
 <meta property="og:description" content="Serafina’s ApCSA blog" />
@@ -16,9 +16,9 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-12-01T00:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Wrapper Classes" />
+<meta property="twitter:title" content="Unit 1-5 Blog" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-01T00:00:00-06:00","datePublished":"2022-12-01T00:00:00-06:00","description":"Serafina’s ApCSA blog","headline":"Wrapper Classes","mainEntityOfPage":{"@type":"WebPage","@id":"https://lychee80.github.io/Test/2022/12/01/blog.html"},"url":"https://lychee80.github.io/Test/2022/12/01/blog.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-01T00:00:00-06:00","datePublished":"2022-12-01T00:00:00-06:00","description":"Serafina’s ApCSA blog","headline":"Unit 1-5 Blog","mainEntityOfPage":{"@type":"WebPage","@id":"https://lychee80.github.io/Test/2022/12/01/blog.html"},"url":"https://lychee80.github.io/Test/2022/12/01/blog.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/Test/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://lychee80.github.io/Test/feed.xml" title="Serafina Wong" /><link rel="shortcut icon" type="image/x-icon" href="/Test/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,13 +73,13 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Wrapper Classes</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-12-01T00:00:00-06:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Unit 1-5 Blog</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-12-01T00:00:00-06:00" itemprop="datePublished">
         Dec 1, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      8 min read
     
 </span></p>
 
@@ -221,6 +221,54 @@ byte -&gt; short -&gt; char -&gt; int -&gt; long -&gt; float -&gt; double (The b
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Wrapper-Classes">Wrapper Classes<a class="anchor-link" href="#Wrapper-Classes"> </a></h1><p>A way to change primitives into objects for use in things like arrayLists. This is helpful since in collection objects, you will not be bale to use primitive types.</p>
+<table>
+<thead><tr>
+<th>Primitive</th>
+<th>Wrapper Class</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>byte</td>
+<td>Byte</td>
+</tr>
+<tr>
+<td>short</td>
+<td>Short</td>
+</tr>
+<tr>
+<td>int</td>
+<td>Integer</td>
+</tr>
+<tr>
+<td>long</td>
+<td>Long</td>
+</tr>
+<tr>
+<td>float</td>
+<td>Float</td>
+</tr>
+<tr>
+<td>double</td>
+<td>Double</td>
+</tr>
+<tr>
+<td>boolean</td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td>char</td>
+<td>Character</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -498,20 +546,20 @@ false
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">date</span> <span class="p">{</span>
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Date</span> <span class="p">{</span>
     <span class="n">String</span> <span class="n">month</span><span class="p">;</span>
     <span class="kt">int</span> <span class="n">day</span><span class="p">;</span>
     <span class="kt">int</span> <span class="n">week</span><span class="p">;</span>
 
-   <span class="n">date</span><span class="p">(</span><span class="n">String</span> <span class="n">month</span><span class="p">,</span> <span class="kt">int</span> <span class="n">week</span><span class="p">,</span> <span class="kt">int</span> <span class="n">day</span><span class="p">){</span>
+   <span class="n">Date</span><span class="p">(</span><span class="n">String</span> <span class="n">month</span><span class="p">,</span> <span class="kt">int</span> <span class="n">week</span><span class="p">,</span> <span class="kt">int</span> <span class="n">day</span><span class="p">){</span>
     <span class="k">this</span><span class="p">.</span><span class="na">month</span><span class="o">=</span> <span class="n">month</span><span class="p">;</span> 
     <span class="k">this</span><span class="p">.</span><span class="na">week</span><span class="o">=</span><span class="n">week</span><span class="p">;</span>
     <span class="k">this</span><span class="p">.</span><span class="na">day</span><span class="o">=</span><span class="n">day</span><span class="p">;</span>
 
    <span class="p">}</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-      <span class="n">date</span> <span class="n">today</span><span class="o">=</span> <span class="k">new</span> <span class="n">date</span><span class="p">(</span><span class="n">December</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-      <span class="n">date</span> <span class="n">tomorrow</span><span class="o">=</span> <span class="k">new</span> <span class="n">date</span><span class="p">(</span><span class="n">December</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+      <span class="n">Date</span> <span class="n">today</span><span class="o">=</span> <span class="k">new</span> <span class="n">Date</span><span class="p">(</span><span class="n">December</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+      <span class="n">Date</span> <span class="n">tomorrow</span><span class="o">=</span> <span class="k">new</span> <span class="n">Date</span><span class="p">(</span><span class="n">December</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
       <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">today</span><span class="p">.</span><span class="na">equals</span><span class="p">(</span><span class="n">tomorrow</span><span class="p">));</span>
     <span class="p">}</span>
   <span class="p">}</span>
@@ -780,8 +828,95 @@ days 6
 <li>Make a class→ then can make many objects</li>
 <li>Parameters refers to the list of variables in a method declaration.</li>
 <li>Arguments are the actual values that are passed in when the method is invoked.</li>
-<li>describe Naming Conventions: A class' naming conventions is around the same as a method's naming conventions, they both need to be camel case </li>
+<li>describe Naming Conventions: A class' naming conventions is pascal case</li>
 <li>Constructor, describe why there is no return: A constructor is the another method to initalize objects for when an object is created and used to make the first attributes of an object, this is why there is no return</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span><span class="c1">// class must have each name in it capitalized</span>
+    <span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span><span class="c1">// attribute</span>
+
+    <span class="kd">public</span> <span class="nf">Main</span><span class="p">(){</span><span class="c1">// a constructor</span>
+      <span class="kt">int</span> <span class="n">y</span><span class="o">=</span><span class="mi">6</span><span class="p">;</span> <span class="c1">// assigning the value to the object</span>
+    <span class="p">}</span>
+  
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">Main</span> <span class="n">myNum</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Main</span><span class="p">();</span><span class="c1">// declaring an object</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">myNum</span><span class="p">.</span><span class="na">x</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="n">Main</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>5
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
+    <span class="c1">// Static </span>
+    <span class="kd">static</span> <span class="kt">void</span> <span class="nf">staticMethod</span><span class="p">()</span> <span class="p">{</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;An apple is a fruit&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+  
+    <span class="c1">// Public method</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">PublicMethod</span><span class="p">()</span> <span class="p">{</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;An orange is a fruit&quot;</span><span class="p">);</span>
+    <span class="p">}</span>
+  
+    <span class="c1">// Main method</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[</span> <span class="o">]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">StaticMethod</span><span class="p">();</span> 
+  
+      <span class="n">Main</span> <span class="n">fruit</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Main</span><span class="p">();</span> <span class="c1">// Need to create an object </span>
+      <span class="n">fruit</span><span class="p">.</span><span class="na">PublicMethod</span><span class="p">();</span> 
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Classes Access and Encapsulation</p>
+<ul>
 <li>Java has many different types of access variables such as Private, default, protected, and public </li>
 <li>private means that the access is restricted to that one class</li>
 <li>Protected means that the access is restricted to every class in that package in subclasses if its not in that package</li>
@@ -795,6 +930,35 @@ days 6
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">User</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="p">;</span> <span class="c1">// private so it won&#39;t be accessible outside of this class</span>
+    
+    <span class="c1">// Accessor method</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">getName</span><span class="p">()</span> <span class="p">{</span>
+      <span class="k">return</span> <span class="n">name</span><span class="p">;</span>
+    <span class="p">}</span>
+  
+    <span class="c1">// Mutator method</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setName</span><span class="p">(</span><span class="n">String</span> <span class="n">newName</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">this</span><span class="p">.</span><span class="na">name</span> <span class="o">=</span> <span class="n">newName</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
