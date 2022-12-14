@@ -164,8 +164,12 @@ window.onload = wrap_img;
             <span class="n">numOn</span><span class="o">++</span><span class="p">;</span>
         <span class="p">}</span> 
     <span class="p">}</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">lights</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="n">numOn</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="kc">false</span><span class="p">;}</span>
-    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">lights</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="n">numOn</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="kc">true</span><span class="p">;}</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">lights</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="n">numOn</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> 
+            <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="n">lights</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span> <span class="o">&amp;&amp;</span> <span class="n">numOn</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span> 
+        <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+    <span class="p">}</span>
             <span class="k">return</span> <span class="n">lights</span><span class="o">[</span><span class="n">row</span><span class="o">][</span><span class="n">col</span><span class="o">]</span><span class="p">;</span> 
 <span class="p">}</span>
 </pre></div>
