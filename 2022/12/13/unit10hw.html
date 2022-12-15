@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
@@ -127,6 +127,28 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Notes">Notes<a class="anchor-link" href="#Notes"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>subclass is the class that is inheriting from the superclass (parent class) using the extends keyword</li>
+<li>all attributes in these classes need to be protected not private since or else the subclass will not be able to access it </li>
+<li>inheritance is very helpful for efficiency and reusing code </li>
+<li>overriding is having a method that has the same name but different parameters making the method signature differ</li>
+<li>the super keyword is used to reference and use the code in the superclass</li>
+<li>polymorphism has two types runtime polymorphism and late binding with method overriding and static polymorphism and early binding with overloading</li>
+<li>everything is the subclass to the object class</li>
+<li>this includes methods like toString and .equals (used for strings)</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h1 id="Hack-1">Hack 1<a class="anchor-link" href="#Hack-1"> </a></h1><p>In your own notebook, make any class with 2 attributes and 0 methods. Create a 2 argument constructor for that class. This will be your superclass. Now, create a subclass that extends from the superclass you made. Create 1 additional attribute in your subclass that was not present in the superclass.</p>
 <p>Then, create a constructor for the subclass that uses the superclass constructor with the super keyword, and then adds an additional assignment for the third attribute.</p>
 
@@ -141,11 +163,12 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Candy</span> <span class="p">{</span>
+    <span class="c1">// attributes</span>
     <span class="kd">protected</span> <span class="n">String</span> <span class="n">flavor</span><span class="p">;</span>
     <span class="kd">protected</span> <span class="n">String</span> <span class="n">type</span><span class="p">;</span>
 
     
-    <span class="c1">// Constructor for the attributes present in the superclass</span>
+    <span class="c1">// two argument constructor</span>
     <span class="kd">public</span> <span class="nf">Candy</span><span class="p">(</span><span class="n">String</span> <span class="n">flavor</span><span class="p">,</span><span class="n">String</span> <span class="n">type</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">this</span><span class="p">.</span><span class="na">flavor</span> <span class="o">=</span> <span class="n">flavor</span><span class="p">;</span>
         <span class="k">this</span><span class="p">.</span><span class="na">type</span> <span class="o">=</span> <span class="n">type</span><span class="p">;</span>
@@ -169,11 +192,12 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Hichew</span> <span class="kd">extends</span> <span class="n">Candy</span> <span class="p">{</span>
-    <span class="c1">// Additional attribute not present in the superclass</span>
+    <span class="c1">// argument specific for this subclass</span>
     <span class="kd">protected</span> <span class="kt">int</span> <span class="n">price</span><span class="p">;</span> 
     
-    <span class="c1">// Constructor for Subclass</span>
+    <span class="c1">// three argument constructor</span>
     <span class="kd">public</span> <span class="nf">Hichew</span><span class="p">(</span><span class="n">String</span> <span class="n">flavor</span><span class="p">,</span><span class="n">String</span> <span class="n">type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">price</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//super keyword to reference superclass&#39;s arguments</span>
         <span class="kd">super</span><span class="p">(</span><span class="n">flavor</span><span class="p">,</span> <span class="n">type</span><span class="p">);</span>
         <span class="k">this</span><span class="p">.</span><span class="na">price</span><span class="o">=</span><span class="n">price</span><span class="p">;</span>
     <span class="p">}</span>
@@ -209,15 +233,17 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Candy</span> <span class="p">{</span>
+    <span class="c1">// new attribute named sugarContent</span>
     <span class="kd">protected</span> <span class="n">String</span> <span class="n">flavor</span><span class="p">;</span>
     <span class="kd">protected</span> <span class="n">String</span> <span class="n">type</span><span class="p">;</span>
     <span class="kd">protected</span> <span class="n">String</span> <span class="n">sugarContent</span><span class="p">;</span>
 
+    <span class="c1">// new method named sugarContent using that attribute</span>
     <span class="kd">public</span> <span class="kt">void</span> <span class="nf">sugarContent</span> <span class="p">()</span> <span class="p">{</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The sugar content is &quot;</span><span class="o">+</span> <span class="n">sugarContent</span><span class="p">);</span>
     <span class="p">}</span>
     
-    <span class="c1">// Constructor for the attributes present in the superclass</span>
+    <span class="c1">// Two argument constructor</span>
     <span class="kd">public</span> <span class="nf">Candy</span><span class="p">(</span><span class="n">String</span> <span class="n">flavor</span><span class="p">,</span><span class="n">String</span> <span class="n">type</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">this</span><span class="p">.</span><span class="na">flavor</span> <span class="o">=</span> <span class="n">flavor</span><span class="p">;</span>
         <span class="k">this</span><span class="p">.</span><span class="na">type</span> <span class="o">=</span> <span class="n">type</span><span class="p">;</span>
@@ -241,15 +267,18 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Hichew</span> <span class="kd">extends</span> <span class="n">Candy</span> <span class="p">{</span>
-    <span class="c1">// Additional attribute not present in the superclass</span>
+    <span class="c1">// argument specific for this subclass</span>
     <span class="kd">protected</span> <span class="kt">int</span> <span class="n">price</span><span class="p">;</span> 
     
-    <span class="c1">// Constructor for Subclass</span>
+    <span class="c1">// three argument constructor</span>
     <span class="kd">public</span> <span class="nf">Hichew</span><span class="p">(</span><span class="n">String</span> <span class="n">flavor</span><span class="p">,</span><span class="n">String</span> <span class="n">type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">price</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">//super keyword to reference superclass&#39;s arguments</span>
         <span class="kd">super</span><span class="p">(</span><span class="n">flavor</span><span class="p">,</span> <span class="n">type</span><span class="p">);</span>
         <span class="k">this</span><span class="p">.</span><span class="na">price</span><span class="o">=</span><span class="n">price</span><span class="p">;</span>
     <span class="p">}</span>
   
+    <span class="c1">// Overriding the method in the superclass for sugarContent. This will lead to a changed method in the subclass</span>
+    <span class="c1">// Changed the method to be specific for Hichews</span>
     <span class="nd">@Override</span> 
     <span class="kd">public</span> <span class="kt">void</span> <span class="nf">sugarContent</span> <span class="p">()</span> <span class="p">{</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The sugar content of a Hichew is high! Don&#39;t eat too much&quot;</span><span class="p">);</span>
@@ -302,30 +331,34 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">skittles</span> <span class="kd">extends</span> <span class="n">Candy</span> <span class="p">{</span>
-    <span class="c1">// Additional attribute not present in the superclass</span>
-    <span class="kd">protected</span> <span class="kt">int</span> <span class="n">price</span><span class="p">;</span> 
-    
-    <span class="c1">// Constructor for Subclass</span>
-    <span class="kd">public</span> <span class="nf">skittles</span><span class="p">(</span><span class="n">String</span> <span class="n">flavor</span><span class="p">,</span><span class="n">String</span> <span class="n">type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">price</span><span class="p">)</span> <span class="p">{</span>
-        <span class="kd">super</span><span class="p">(</span><span class="n">flavor</span><span class="p">,</span> <span class="n">type</span><span class="p">);</span>
-        <span class="k">this</span><span class="p">.</span><span class="na">price</span><span class="o">=</span><span class="n">price</span><span class="p">;</span>
-    <span class="p">}</span>
-  
+     <span class="c1">// argument specific for this subclass</span>
+     <span class="kd">protected</span> <span class="kt">int</span> <span class="n">price</span><span class="p">;</span> 
+   
+     <span class="c1">// three argument constructor</span>
+     <span class="kd">public</span> <span class="nf">skittles</span><span class="p">(</span><span class="n">String</span> <span class="n">flavor</span><span class="p">,</span><span class="n">String</span> <span class="n">type</span><span class="p">,</span> <span class="kt">int</span> <span class="n">price</span><span class="p">)</span> <span class="p">{</span>
+         <span class="c1">//super keyword to reference superclass&#39;s arguments</span>
+         <span class="kd">super</span><span class="p">(</span><span class="n">flavor</span><span class="p">,</span> <span class="n">type</span><span class="p">);</span>
+         <span class="k">this</span><span class="p">.</span><span class="na">price</span><span class="o">=</span><span class="n">price</span><span class="p">;</span>
+     <span class="p">}</span>
+   
+     <span class="c1">// Overriding the method in the superclass for sugarContent. This will lead to a changed method in the subclass</span>
+     <span class="c1">// Changed the method to be specific for skittles</span>
     <span class="nd">@Override</span> 
     <span class="kd">public</span> <span class="kt">void</span> <span class="nf">sugarContent</span> <span class="p">()</span> <span class="p">{</span>
         <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;The sugar content of skittles is high! Don&#39;t eat too much&quot;</span><span class="p">);</span>
     <span class="p">}</span>
 
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">company</span><span class="p">(</span><span class="n">String</span> <span class="n">company</span><span class="p">){</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;This candy is created by the company &quot;</span><span class="o">+</span> <span class="n">company</span><span class="p">);</span>
-    <span class="p">}</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">company</span><span class="p">(</span><span class="n">String</span> <span class="n">company</span><span class="p">,</span> <span class="kt">int</span> <span class="n">year</span><span class="p">){</span>
-        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;This candy is created by the company &quot;</span><span class="o">+</span> <span class="n">company</span> <span class="o">+</span> <span class="s">&quot; in &quot;</span><span class="o">+</span> <span class="n">year</span><span class="p">);</span>
-    <span class="p">}</span>
-
+    <span class="c1">// method overloading with these two methods with the same name but different arguments</span>
+   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">company</span><span class="p">(</span><span class="n">String</span> <span class="n">company</span><span class="p">){</span>
+       <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;This candy is created by the company &quot;</span><span class="o">+</span> <span class="n">company</span><span class="p">);</span>
+   <span class="p">}</span>
+   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">company</span><span class="p">(</span><span class="n">String</span> <span class="n">company</span><span class="p">,</span> <span class="kt">int</span> <span class="n">year</span><span class="p">){</span>
+       <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;This candy is created by the company &quot;</span><span class="o">+</span> <span class="n">company</span> <span class="o">+</span> <span class="s">&quot; in &quot;</span><span class="o">+</span> <span class="n">year</span><span class="p">);</span>
+   <span class="p">}</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Candy</span> <span class="n">candy</span> <span class="o">=</span> <span class="k">new</span> <span class="n">skittles</span><span class="p">(</span><span class="s">&quot;Assorted&quot;</span><span class="p">,</span> <span class="s">&quot;soft candy&quot;</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
+        <span class="n">candy</span><span class="p">.</span><span class="na">sugarContent</span><span class="p">();</span>
         <span class="n">skittles</span> <span class="n">pack</span> <span class="o">=</span> <span class="k">new</span> <span class="n">skittles</span><span class="p">(</span><span class="s">&quot;Assorted&quot;</span><span class="p">,</span> <span class="s">&quot;soft candy&quot;</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span> 
-        <span class="n">pack</span><span class="p">.</span><span class="na">sugarContent</span><span class="p">();</span>
         <span class="n">pack</span><span class="p">.</span><span class="na">company</span><span class="p">(</span><span class="s">&quot;Mars Wrigley&quot;</span><span class="p">);</span>
         <span class="n">pack</span><span class="p">.</span><span class="na">company</span><span class="p">(</span><span class="s">&quot;Mars Wrigley&quot;</span><span class="p">,</span> <span class="mi">1974</span><span class="p">);</span>
 
